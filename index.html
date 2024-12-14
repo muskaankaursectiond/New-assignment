@@ -3,13 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <title>PupHub - Dog Gallery and Facts</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="text" id="pokemonName" placeholder="Enter a Pokemon name">
-    <button onclick="fetchData()">Fetch Pokemon</button><br>
-    <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none">
+    <header>
+        <h1>PupHub</h1>
+    </header>
+    <main>
+        <section id="image-section">
+            <h2>Random Dog Image</h2>
+            <div class="flex-container">
+                <button id="fetch-image">Fetch Image</button>
+                <p>OR double-click an image to add it to favorites</p>
+            </div>
+            <div id="image-container" class="content-box"></div>
+        </section>
+
+        <section id="favorites-section">
+            <h2>Favorites Gallery</h2>
+            <div id="search-container">
+                <input type="text" id="search-favorites" placeholder="Search favorites by breed" />
+                <button id="clear-search">Clear Search</button>
+            </div>
+            <ul id="favorites-list" class="content-box"></ul>
+        </section>
+
+        <section id="facts-section">
+            <h2>Dog Fact</h2>
+            <button id="fetch-fact">Fetch Fact</button>
+            <div id="fact-container" class="content-box"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PupHub - All about dogs!</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
